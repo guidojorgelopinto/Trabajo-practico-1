@@ -1,23 +1,19 @@
 @use '../variables/variables' as *;
 
-.header__container {
-    //background-color: blue;
-  
-  }
-  .header {
+
+.header {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
-  
-  
+
     &__logo {
-      transition: all 0.3s ease-in-out;
-  
-      &:hover {
-        color:;
-      }
+      background-image: url('../../assets/mundo1.jpg');
+      text-align: center;
+      color: $white;
     }
+    
   }
 
 // Sidebar
@@ -45,15 +41,15 @@
 
 #blog {
   top: 80px;
-  background-color: #2196F3; /* Blue */
+  background-color: #2196F3;
 }
 
 #projects {
   top: 140px;
-  background-color: #f44336; /* Red */
+  background-color: #f44336;
 }
 
 #contact {
   top: 200px;
-  background-color: #555 /* Light Black */
+  background-color: #555
 }
