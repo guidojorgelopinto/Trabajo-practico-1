@@ -9,90 +9,167 @@
   </head>
   <body>
 
+                  <!-- contacto -->
+              
+                  <div class="container">
+                    <div style="text-align:center">
+                      <h2>Contact Us</h2>
+                      <p>Swing by for a cup of coffee, or leave us a message:</p>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img src="/w3images/map.jpg" style="width:100%">
+                      </div>
+                      <div class="column">
+                        <form action="/action_page.php">
+                          <label for="fname">First Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                          <label for="lname">Last Name</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                          <label for="country">Country</label>
+                          <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                          </select>
+                          <label for="subject">Subject</label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                          <input type="submit" value="Submit">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
           <!-- header -->
 
-          <header class="header__container">
-            <h1 class="header__logo">|Aplicaciones y Sitios Web|</h1>
-      </header>
-      <div id="mySidenav" class="sidenav">
-        <a href="./index.html" id="about">Inicio</a>
-        <a href="./diseños.html" id="blog">Diseños</a>
-        <a href="./nosotros.html" id="projects">Nosotros</a>
-        <a href="./contacto.html" id="contact">Contacto</a>
-      </div>
+    <header class="header__container">
+          <h1 class="header__logo">Aplicaciones y Sitios Web</h1>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="./index.html" id="about">Inicio</a>
+      <a href="./diseños.html" id="blog">Diseños</a>
+      <a href="./nosotros.html" id="projects">Nosotros</a>
+      <a href="./contacto.html" id="contact">Contacto</a>
+    </div>
+
+          <!-- fin header -->
 
           <!-- main -->
 
-    <main> 
+    <main>
 
-              <!-- contacto -->
-              
-      <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-      
-          <!-- fin contacto -->
+          <!-- slider -->      
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+              <img src="./assets/slider/1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+              <img src="./assets/slider/2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+              <img src="./assets/slider/3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="./assets/slider/4.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="./assets/slider/5.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+              <img src="./assets/slider/6.jpg" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="ROMA.jpg" style="width:100%" onclick="currentSlide(1)" alt="ROMA">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="VENECIA-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="VENECIA-1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="VENECIA-2.jpg" style="width:100%" onclick="currentSlide(3)" alt="VENECIA-2">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="VENECIA-3.jpg" style="width:100%" onclick="currentSlide(4)" alt="VENECIA-3">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="BRUJAS-1.jpg" style="width:100%" onclick="currentSlide(5)" alt="BRUJAS-1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="BRUJAS-2.jpg" style="width:100%" onclick="currentSlide(6)" alt="BRUJAS-2">
+            </div>
+          </div>
+        </div>
+
+      </hero>
+
+          <!-- fin hero -->
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     </main> 
 
-      <!-- fin main -->
+          <!-- fin main -->
 
-      <!-- footer -->
+          <!-- footer -->
 
-        <footer class="footer__container">
-          <div class="footer container">
+      <footer class="footer__container">
+        <div class="footer container">
 
-            <div class="footer__links">
+          <div class="footer__links">
 
-              <a href="https://www.linkedin.com/">
-              <img id= "fb" width= 25px, height= 25px, src="./assets/img-rs/li.png" alt="li"></a>
+            <a href="https://www.linkedin.com/">
+            <img id= "fb" width= 25px, height= 25px, src="./assets/img-rs/li.png" alt="li"></a>
 
-              <a href="https://api.whatsapp.com/send?phone=1137664770">
-              <img id= "wt" width= 25px, height= 25px, src="./assets/img-rs/wt.png" alt="wt"></a>
+            <a href="https://api.whatsapp.com/send?phone=1137664770">
+            <img id= "wt" width= 25px, height= 25px, src="./assets/img-rs/wt.png" alt="wt"></a>
 
-              <a href="https://www.instagram.com/">    
-              <img id= "ig" width= 25px, height= 25px, src="./assets/img-rs/ig.png" alt="ig"></a>
-              
-            </div>
+            <a href="https://www.instagram.com/">    
+            <img id= "ig" width= 25px, height= 25px, src="./assets/img-rs/ig.png" alt="ig"></a>
             
-            <div class="footer__info">
-              <div class="footer__info--title">
-                <h5>By Guido Jorge Lo Pinto</h5>
-              </div>
-              <div class="footer__info--text">
-                <p>
-                  Copyright © 2021 Guido Jorge Lo Pinto S.A. 
-                  El uso de este sitio web implica la aceptación de los Términos y Condiciones y 
-                  de las Políticas de Privacidad. Las fotos son a modo ilustrativo.</p>
-              </div>
           </div>
-        </footer>
-      <!-- fin footer -->
+          
+          <div class="footer__info">
+            <div class="footer__info--title">
+              <h5>By Guido Jorge Lo Pinto</h5>
+            </div>
+            <div class="footer__info--text">
+              <p>
+                Copyright © 2021 Guido Jorge Lo Pinto S.A. 
+                El uso de este sitio web implica la aceptación de los Términos y Condiciones y 
+                de las Políticas de Privacidad. Las fotos son a modo ilustrativo.</p>
+            </div>
+        </div>
+      </footer>
+          <!-- fin footer -->
 
-      <!-- scripts -->
-    <script src="scripts/index.js"></script>
-      <!-- scripts -->
+          <!-- scripts -->
+        <script src="scripts/index.js"></script>
+          <!-- scripts -->
   </body>
 </html>
