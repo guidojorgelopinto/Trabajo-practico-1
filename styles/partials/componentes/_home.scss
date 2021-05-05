@@ -1,0 +1,137 @@
+@use '../variables/variables' as *;
+
+  // .main{
+  //   // background-color: red;
+  // }
+          // -------------hero
+
+  .hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 0;
+
+      &--title {
+        font-size: 8rem;
+      }
+
+      &--description {
+        font-size: 4rem;
+      }
+    }
+
+  }
+
+          // -------------promociones
+
+
+  .promociones__container {
+    padding: 10rem 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10rem;
+
+  }
+
+  .promociones {
+    display: flex;
+    padding: 10rem;
+    flex-wrap: wrap;
+    row-gap: 10rem;
+    column-gap: 5%;
+
+
+    &__subtitulo {
+      border: 2px solid white;
+      padding: 15px 0;
+      font-size: 5rem;
+    }
+
+    .promocion {
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      padding: 3rem;
+      border-radius: 3rem;
+
+      &:hover {
+        transform: scale(1.05);
+        //background-color: rgba($background-color-2, 0.5);
+      }
+
+      &__info {
+        text-align: justify;
+        padding: 0 3rem;
+      }
+    }
+
+  }
+
+
+  // -------------boton verde
+
+  #hero__boton {
+
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  .btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 25px 50px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+  }
+
+  .btn-green{
+    color: white;
+    background-color: #3CC93F;
+  }
+  .btn-green:hover{
+    background-color: #37B839;	
+  }
+  .btn-green:active{
+    background-color: #3eff42;
+  }
+
+
+  // -------------boton rojo
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
