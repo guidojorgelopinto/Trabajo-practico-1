@@ -118,7 +118,7 @@
 
      // -------------boton rojo
 
-     #myBtn {
+      #myBtn {
       display: none;
       position: fixed;
       bottom: 20px;
@@ -126,8 +126,8 @@
       z-index: 99;
       border: none;
       outline: none;
-      background-color: red;
-      color: white;
+      background-color: $nav3;
+      color: $blanco;
       cursor: pointer;
       padding: 15px;
       border-radius: 10px;
@@ -135,5 +135,5 @@
     }
   
     #myBtn:hover {
-      background-color: #555;
+      background-color: $gris;
     }
