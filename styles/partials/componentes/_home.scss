@@ -1,12 +1,28 @@
 @use '../variables/variables' as *;
 
+.oculto {
+  opacity: 0;
+  animation: aparecer forwards 15000ms;
+}
+
+@keyframes aparecer {
+
+  0% {
+    opacity: 0;
+ 
+  }
+
+  100% { opacity: 100%
+  }
+}
     .main{
      text-align:center;
-      }
+    }
           // -------------hero
+       
 
   .hero {
-    color: #ffff;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,8 +89,7 @@
 
   }
 
-
-  // -------------boton verde
+          // -------------boton verde
 
   #hero__boton {
 
@@ -87,21 +102,18 @@
     display: inline-block;
     padding: 25px 50px;
     text-decoration: none;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+    text-shadow: 0 1px 0 $gris;
+    box-shadow: 0 1px 1px $black; 
   }
 
   .btn-green{
-    color: white;
-    background-color: #3CC93F;
+    color: $white;
+    background-color: $bt1;
   }
   .btn-green:hover{
-    background-color: #37B839;	
-  }
+    background-color: $bt2;
   .btn-green:active{
-    background-color: #3eff42;
-  }
-
+    background-color: $bt3;
 
   // -------------boton rojo
 
@@ -113,16 +125,16 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: red;
-    color: white;
+    background-color: $bt4;
+    color: $white;
     cursor: pointer;
-    padding: 15px;
+    padding: 15px; $nav3;
     border-radius: 10px;
     font-size: 18px;
   }
 
   #myBtn:hover {
-    background-color: #555;
+    background-color: $nav4;
   }
 
 

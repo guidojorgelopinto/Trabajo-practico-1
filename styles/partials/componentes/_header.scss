@@ -1,15 +1,17 @@
 @use '../variables/variables' as *;
 
+.header__container {
+  background-image: url('../../../assets/mundo1.jpg');
+}
 
 .header {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
 
+
     &__logo {
-      background-image: url('../../../assets/mundo1.jpg');
       text-align: center;
       color: $white;
     }
@@ -36,20 +38,20 @@
 
 #about {
   top: 20px;
-  background-color: #04AA6D;
+  background-color: $nav1;
 }
 
 #blog {
   top: 80px;
-  background-color: #2196F3;
+  background-color: $nav2;
 }
 
 #projects {
   top: 140px;
-  background-color: #f44336;
+  background-color: $nav3;
 }
 
 #contact {
   top: 200px;
-  background-color: #555
+  background-color: $nav4
 }

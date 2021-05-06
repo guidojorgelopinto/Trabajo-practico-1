@@ -1,5 +1,6 @@
 @use '../variables/variables' as *;
 
+// -------------main
 
 .main{
     text-align:center;
@@ -47,7 +48,7 @@
 
 
 
-// -------------boton rojo
+  // -------------boton rojo
 
   #myBtn {
     display: none;
@@ -57,15 +58,14 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: red;
-    color: white;
+    background-color: $bt4;
+    color: $white;
     cursor: pointer;
-    padding: 15px;
+    padding: 15px; $nav3;
     border-radius: 10px;
     font-size: 18px;
   }
 
   #myBtn:hover {
-    background-color: #555;
-  }
+    background-color: $nav4;
 

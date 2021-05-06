@@ -31,6 +31,10 @@
   gap: 5%;
 }
 
+.header__container {
+  background-image: url("../../../assets/mundo1.jpg");
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -38,7 +42,6 @@
   padding: 2rem 0;
 }
 .header__logo {
-  background-image: url("../../../assets/mundo1.jpg");
   text-align: center;
   color: #c1c1c1;
 }
@@ -79,12 +82,35 @@
   background-color: #555;
 }
 
+.oculto {
+  opacity: 0;
+  -webkit-animation: aparecer forwards 15000ms;
+          animation: aparecer forwards 15000ms;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .main {
   text-align: center;
 }
 
 .hero {
-  color: #ffff;
+  color: #c1c1c1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,7 +180,7 @@
 }
 
 .btn-green {
-  color: white;
+  color: #c1c1c1;
   background-color: #3CC93F;
 }
 
@@ -388,6 +414,11 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  font-size: 1.5rem;
+  color: #333333;
+}
+
 a {
   text-decoration: none;
   font-size: 2rem;
@@ -420,4 +451,8 @@ h6, p {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+#countdown {
+  font-size: 15em;
 }/*# sourceMappingURL=styles.css.map */
