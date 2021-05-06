@@ -1,3 +1,6 @@
+let main = document.querySelector("#main");
+const mybutton = document.getElementById("myBtn");
+const promociones = document.getElementById("promociones");
 
 // -------------bienvenida al sitio
 
@@ -5,14 +8,12 @@ alert("DANGER, DANGER, DANGER!!!!!");
 
 // -------------aparece
 
-let main = document.querySelector("#main");
 
 document.onload = console.log(main);
 
 
 // -------------boton arriba
 
-const mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {scrollFunction()};
 
@@ -28,3 +29,15 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// -------------promociones
+
+
+window.onscroll = () => {
+  if (
+    document.documentElement.scrollTop >
+    document.documentElement.clientHeight * 0.7
+  ) {
+    promociones.classList.add("effect1");
+  }
+};
