@@ -1,23 +1,7 @@
 
-// // -------------bienvenida al sitio
+// -------------bienvenida al sitio
 
-// alert("DANGER, DANGER, DANGER!!!!!");
-
-// ------------- efecto header
-
-const header = document.getElementById ("header")
-
-
-windows.onscroll = () => {
-
-  if (
-    document.documentElement.scrollTop >
-    document.documentElement.clientHeight * 0.1
-  ) {
-    header.classList.add(efectt);
-  }
-};
-
+alert("DANGER, DANGER, DANGER!!!!!");
 
 // -------------aparece
 
