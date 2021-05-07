@@ -18,8 +18,9 @@
     .main{
      text-align:center;
     }
-          // -------------hero
-       
+
+// -------------hero
+
 
   .hero {
     color: $blanco;
@@ -29,8 +30,8 @@
     flex-direction: column;
     padding: 15rem 0;
 
-    background-image: url('../../../assets/mundo.jpg');
-    background-position: 40rem;
+    // background-image: url('../../../assets/esc.jpg');
+    // background-position: 40rem;
 
     &__content {
       display: flex;
@@ -50,7 +51,7 @@
 
   }
 
-          // -------------promociones
+// -------------promociones
 
   .promociones__container {
     padding: 50rem 0rem;
@@ -89,7 +90,7 @@
 
   }
 
-          // -------------boton verde
+// -------------boton verde
 
   #hero__boton {
 
@@ -102,21 +103,24 @@
     display: inline-block;
     padding: 25px 50px;
     text-decoration: none;
-    text-shadow: 0 1px 0 $gris;
+    text-shadow: 0 1px 0 $white;
     box-shadow: 0 1px 1px $black; 
   }
 
-  .btn-green{
-    color: $white;
-    background-color: $bt1;
-  }
-  .btn-green:hover{
-    background-color: $bt2;
-  .btn-green:active{
-    background-color: $bt3;
+
+    .btn-green{
+      color: $blanco;
+      background-color: $bt1;
+
+      .btn-green:hover{
+        background-color: $bt2;
+      .btn-green:active{
+        background-color: $bt3;
+      }
+    }
   }
 
-     // -------------boton rojo
+// -------------boton rojo
 
       #myBtn {
       display: none;
