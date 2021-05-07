@@ -9,14 +9,13 @@
 
   0% {
     opacity: 0;
- 
   }
 
   100% { opacity: 100%
   }
 }
     .main{
-     text-align:center;
+    text-align:center;
     }
 
 // -------------hero
@@ -29,8 +28,6 @@
     align-items: center;
     flex-direction: column;
     padding: 15rem 0;
-    font-family: 'Montserrat Alternates', sans-serif;
-    -webkit-text-stroke: 1px black;
 
     &__content {
       display: flex;
@@ -41,10 +38,14 @@
 
       &--title {
         font-size: 8rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        -webkit-text-stroke: 1px black;
       }
 
       &--description {
         font-size: 4rem;
+        font-family: 'Montserrat Alternates', sans-serif;
+        -webkit-text-stroke: 1px black;
       }
     }
 
@@ -57,7 +58,6 @@
     display: flex;
     text-align: center;
     gap: 10rem;
-    -webkit-text-stroke: 1px black;
 
   }
 
@@ -97,7 +97,7 @@
 
   #hero__boton {
 
-    padding-top: 10rem;
+    padding-top: 20rem;
     text-align: center;
   }
 
@@ -106,20 +106,28 @@
     display: inline-block;
     padding: 25px 50px;
     text-decoration: none;
-    text-shadow: 0 1px 0 $white;
-    box-shadow: 0 1px 1px $black; 
+    box-sizing: border-box;
+    font-size: 1.3em;
+    padding: 1em 2em;
+    background: transparent;
+    border: 2px solid $fondo-seccion;
+    color: $fondo-seccion !important;
+    border-radius: 0em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 5%);
   }
 
 
     .btn-green{
-      color: $blanco;
-      background-color: $bt1;
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      line-height: 1em;
 
-      .btn-green:hover{
-        background-color: $bt2;
-      .btn-green:active{
-        background-color: $bt3;
-      }
+       .btn-green:hover{
+          background-color: $bt2;
+        .btn-green:active{
+          background-color: $bt3;
+       }
     }
   }
 
