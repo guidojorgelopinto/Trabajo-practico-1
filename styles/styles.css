@@ -31,6 +31,10 @@
   gap: 5%;
 }
 
+.header__container {
+  align-items: center;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -40,6 +44,8 @@
 .header__logo {
   text-align: center;
   color: #ffff;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-text-stroke: 1px black;
 }
 
 #mySidenav a {
@@ -112,6 +118,8 @@
   align-items: center;
   flex-direction: column;
   padding: 15rem 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-text-stroke: 1px black;
 }
 .hero__content {
   display: flex;
@@ -132,6 +140,7 @@
   display: flex;
   text-align: center;
   gap: 10rem;
+  -webkit-text-stroke: 1px black;
 }
 
 .promociones {
@@ -140,6 +149,9 @@
   flex-direction: row;
   text-align: center;
   gap: 5rem;
+}
+.promociones__subtitulo {
+  font-size: 5rem;
 }
 .promociones .promocion {
   flex-basis: 30%;
@@ -467,7 +479,10 @@ html {
 
 body {
   min-height: 100vh;
-  background-image: url("../../../assets/mundo.jpg");
+  background-image: url("../../../assets/esc.jpg");
+  background-repeat: no-repeat;
+  background-position: -55rem 0rem;
+  background-size: cover;
 }
 
 ul {

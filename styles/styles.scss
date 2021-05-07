@@ -16,8 +16,11 @@ html {
 
 body {
   min-height: 100vh;
-  background-image: url('../../../assets/mundo.jpg');
-  
+  background-image: url('../../../assets/esc.jpg');
+  background-repeat: no-repeat;
+  background-position: -55rem 0rem;
+  background-size: cover;
+
 }
 
 ul {

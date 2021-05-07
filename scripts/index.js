@@ -20,6 +20,7 @@ window.onscroll = () => {
   ) {
     promociones.classList.add("effect2");
   }
+  
 };
 
 // -------------boton arriba

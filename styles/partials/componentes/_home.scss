@@ -29,9 +29,8 @@
     align-items: center;
     flex-direction: column;
     padding: 15rem 0;
-
-    // background-image: url('../../../assets/esc.jpg');
-    // background-position: 40rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    -webkit-text-stroke: 1px black;
 
     &__content {
       display: flex;
@@ -58,6 +57,7 @@
     display: flex;
     text-align: center;
     gap: 10rem;
+    -webkit-text-stroke: 1px black;
 
   }
 
@@ -68,6 +68,9 @@
     text-align: center;
     gap: 5rem;
 
+    &__subtitulo {
+      font-size: 5rem;
+    }
     .promocion {
       flex-basis: 30%;
       display: flex;
