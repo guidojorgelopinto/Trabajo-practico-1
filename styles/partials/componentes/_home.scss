@@ -1,5 +1,7 @@
 @use '../variables/variables' as *;
 
+// -------------animacion hero
+
 .oculto {
   opacity: 0;
   animation: aparecer forwards 15000ms;

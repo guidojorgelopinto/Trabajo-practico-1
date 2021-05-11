@@ -1,5 +1,8 @@
 @use '../variables/variables' as *;
 
+
+// -------------header
+
 .header__container {
   align-items: center;
 }
@@ -20,7 +23,7 @@
     
   }
 
-// Sidebar
+// -------------Sidebar
 
 #mySidenav a {
   position: absolute;
