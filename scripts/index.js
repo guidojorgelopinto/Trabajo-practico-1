@@ -13,7 +13,7 @@ document.onload = console.log(hero);
 
 // -------------promociones
 
-window.onscroll = () => {
+document.onscroll = () => {
   if (
     document.documentElement.scrollTop >
     document.documentElement.clientHeight * 0.7
